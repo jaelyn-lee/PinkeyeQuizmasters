@@ -5,7 +5,9 @@ function App() {
   return (
     <>
       <h1 className="header">True &nbsp; or &nbsp; False</h1>
-      <Quiz />
+      <div className=" pt-20">
+        <Quiz />
+      </div>
     </>
   )
 }

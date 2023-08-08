@@ -14,15 +14,4 @@ router.get('/', async (req, res) => {
   }
 })
 
-// router.post('/', async (req, res) => {
-//   try {
-//     const id = req.body
-//     await db.checkAnswer(id)
-//     res.sendStatus(201)
-//   } catch (error) {
-//     console.error(error)
-//     res.status(500).json({ message: 'error in server' })
-//   }
-// })
-
 export default router

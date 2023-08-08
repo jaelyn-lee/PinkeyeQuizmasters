@@ -4,7 +4,6 @@ import {} from 'ts-jest'
 
 import App from './App'
 import store from '../store'
-import { fetchFruits } from '../actions'
 
 jest.mock('../actions')
 const fetchFruits_ = fetchFruits as jest.Mock<ReturnType<typeof fetchFruits>>

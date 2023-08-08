@@ -1,5 +1,4 @@
 import Quiz from './Quiz'
-import { useRef } from 'react'
 
 function App() {
   return (

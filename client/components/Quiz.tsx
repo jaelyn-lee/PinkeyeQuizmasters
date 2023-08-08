@@ -1,10 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { useAppDispatch, useAppSelector } from '../hooks'
 import { fetchQuestions } from '../slices/questionsSlice'
 import GameOver from './GameOver'
-import correctSound from '/music/correct.mp3'
-import gameOverSound from '/music/gameOver.mp3'
-import backgroundSound from '/music/themeMusic.mp3'
+// import correctSound from '/music/correct.mp3'
+// import gameOverSound from '/music/gameOver.mp3'
+// import backgroundSound from '/music/themeMusic.mp3'
 
 function Quiz() {
   const dispatch = useAppDispatch()
@@ -36,11 +36,11 @@ function Quiz() {
       } else {
         setIsRight('right')
         setCurrentQuestionId(currentQuestionId + 1)
-        setSound(correctSound)
+        // setSound(correctSound)
       }
     } else {
       setIsRight('wrong')
-      setSound(gameOverSound)
+      // setSound(gameOverSound)
       // setBackgroundSound(false)
     }
     setPlaySound(true)
@@ -74,9 +74,9 @@ function Quiz() {
             <button className="right" onClick={() => handleAnswer('false')}>
               False
             </button>
-            <audio ref={backgroundAudioRef} autoPlay loop>
+            {/* <audio ref={backgroundAudioRef} autoPlay loop>
               <source src={backgroundSound} type="audio/mpeg" />
-            </audio>
+            </audio> */}
           </div>
         </>
       ) : (

@@ -5,7 +5,6 @@ function GameOver() {
   const [isClicked, setIsClicked] = useState(false)
   const playAgain = () => {
     setIsClicked(true)
-    console.log('clicked')
   }
   return (
     <>
@@ -23,7 +22,6 @@ function GameOver() {
               Play Again
             </button>
           </div>
-
           <div className="buttons">
             <button className="left">True</button>
             <button className="right">False</button>

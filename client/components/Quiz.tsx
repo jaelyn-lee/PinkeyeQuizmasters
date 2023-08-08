@@ -2,9 +2,9 @@ import React, { useEffect, useState, useRef } from 'react'
 import { useAppDispatch, useAppSelector } from '../hooks'
 import { fetchQuestions } from '../slices/questionsSlice'
 import GameOver from './GameOver'
-import correctSound from '../../public/music/correct.mp3'
-import gameOverSound from '../../public/music/gameOver.mp3'
-import backgroundSound from '../../public/music/themeMusic.mp3'
+import correctSound from '/music/correct.mp3'
+import gameOverSound from '/music/gameOver.mp3'
+import backgroundSound from '/music/themeMusic.mp3'
 
 function Quiz() {
   const dispatch = useAppDispatch()
@@ -25,7 +25,7 @@ function Quiz() {
   }, [])
 
   const currentQuestion = questions.find(
-    (question) => question.id === currentQuestionId
+    (question) => question.id === currentQuestionId,
   )
 
   function handleAnswer(answer: string) {

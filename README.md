@@ -1,36 +1,13 @@
-# Boilerplate: Fullstack with Sass
+# Pinkeye Quiz masters
 
 ## Setup
 
-### What's included
+Please run the following command lines on your terminal to get started:
+* git clone git@github.com:jaelyn-lee/PinkeyeQuizmasters.git
+* npm i
+* npm run knex migrate:latest && npm run knex seed:run
 
-This repo includes:
+## Description
+Pinkeye Quiz Master is a group project that features a simple quiz app with an arcade theme and amusing sound effects to engage users. The front end was my focus, where I rendered the quiz to the page and defined the conditions for correct and incorrect answers. Through this project, I gained a clear understanding of the functionality related to the front end and the data retrieval of the back end. 
 
-* a single, simple API endpoint (`/api/v1/fruits`)
-* a single React component (`<App />`)
-* an example database module (`server/db/fruits.js`)
-* an API client module (`client/apis/fruits.js`)
-* configuration for Jest and testing library
-* configuration for server-side debugging in VS Code
-* configuration for preprocessing Sass
-* a single client-side test (`client/components/App.test.js`)
-
-### Installation
-
-#### **From the Github UI**
-
-See the instructions [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) to use Github's feature to create a new repo from a template.
-
-#### **From the command line**
-
-```
-git clone https://github.com/dev-academy-challenges/boilerplate-fullstack [your-project-name]
-cd [your-project-name]
-npm install # to install dependencies
-npm run dev # to start the dev server
-```
-
-You can find the server running on [http://localhost:3000](http://localhost:3000).
-
----
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-fullstack-scss)
+Hey, just a friendly heads up that if you play this game too much, you might end up with a case of pink eye. So, take breaks, have fun, and keep those eyes healthy!
